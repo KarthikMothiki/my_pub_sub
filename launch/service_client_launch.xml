@@ -1,0 +1,15 @@
+<!-- my_service_pkg/launch/service_client_launch.xml -->
+<launch>
+    <node
+        pkg="my_service_pkg"
+        exec="service"
+        name="add_two_ints_service"
+        output="screen">
+    </node>
+    <node
+        pkg="my_service_pkg"
+        exec="client"
+        name="add_two_ints_client"
+        output="screen">
+    </node>
+</launch>
