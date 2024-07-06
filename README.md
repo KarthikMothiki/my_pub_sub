@@ -14,7 +14,7 @@ First, create a new package for your service and client nodes.
 
 ```bash
 cd ~/ros2_ws/src
-ros2 pkg create --build-type ament_python my_service_pkg
+ros2 pkg create --build-type ament_python your_package_name
 ```
 
 ## Step 2: Define the Service
@@ -22,7 +22,7 @@ ros2 pkg create --build-type ament_python my_service_pkg
 Create a new directory for your service definitions.
 
 ```bash
-mkdir -p ~/ros2_ws/src/my_service_pkg/srv
+mkdir -p ~/ros2_ws/src/your_package_name/srv
 ```
 Inside this directory, create a new file named AddTwoInts.srv with the following content:
 
@@ -41,7 +41,7 @@ Update the setup.py file to include the service files.
 ```
 from setuptools import setup
 
-package_name = 'my_pub_sub'
+package_name = 'your_package_name'
 
 setup(
     name=package_name,
@@ -72,7 +72,7 @@ setup(
 Update the package.xml to include the build dependencies.
 ```
 <package format="3">
-  <name>my_service_pkg</name>
+  <name>your_package_name</name>
   <version>0.0.0</version>
   <description>Examples of ROS2 services in Python</description>
   <maintainer email="your_email@example.com">your_name</maintainer>
