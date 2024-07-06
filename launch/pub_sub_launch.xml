@@ -1,0 +1,15 @@
+<!-- my_pub_sub/launch/pub_sub_launch.xml -->
+<launch>
+    <node
+        pkg="my_pub_sub"
+        exec="publisher_counter"
+        name="counter_publisher"
+        output="screen">
+    </node>
+    <node
+        pkg="my_pub_sub"
+        exec="subscriber_counter"
+        name="counter_subscriber"
+        output="screen">
+    </node>
+</launch>
