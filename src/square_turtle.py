@@ -16,7 +16,7 @@ class Square_Movement(Node):
 		ang = Twist()
 		
 		lin.linear.x = 1.0
-		ang.angular.z = math.PI/2
+		ang.angular.z = math.pi/2
 		
 		for i in range(4):
 			self.me.publish(lin)
