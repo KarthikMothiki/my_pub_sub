@@ -25,6 +25,7 @@ setup(
         'console_scripts': [
             'publisher_counter = my_pub_sub.publisher_counter:main',
             'subscriber_counter = my_pub_sub.subscriber_counter:main',
+            'square_turtle = my_pub_sub.square_turtle:main',
             'service = my_service_pkg.service:main',
             'client = my_service_pkg.client:main',
         ],
