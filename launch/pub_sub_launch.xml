@@ -1,4 +1,5 @@
 <!-- my_pub_sub/launch/pub_sub_launch.xml -->
+<?xml version="1.0" encoding="UTF-8" ?>
 <launch>
     <node
         pkg="my_pub_sub"
